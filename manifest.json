@@ -2,8 +2,8 @@
     "short_name": "twittor", 
     "name": "twittor de vengadores", 
     "start_url": "index.html", 
-    "backgroud_color":"",
-    "theme_color":"",
+    "backgroud_color":"#943ae8",
+    "theme_color":"#943ae8",
     "display":"standalone", 
     "icons" :[ 
         { 
