@@ -9,7 +9,7 @@
     margin: 0px !important;
     color: #7f8c8d;
     font-size: 16px;
-    background-color: #dde1e2; 
+    background-color: #3C3C3C; 
     width: 100%;
 }
 
@@ -20,8 +20,9 @@
 
 .seleccion {
   margin-top: 6em;
-  display: block;
-  margin-bottom: 6em;
+  display: flex; /* usar flexbox */
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 20px; /* Espacio entre los avatares */ 
 }
 
 .seleccion div {
@@ -36,7 +37,12 @@
   -o-border-radius: 50%;
   border-radius: 50%;
   border: 5px solid #ecf0f1;
-  position: relative; 
+  position: relative;  
+  transition: transform 0.3s ease;
+} 
+ 
+.seleccion-avatar:hover {
+  transform: scale(1.1);
 }
 
 /* Modal */
@@ -45,7 +51,7 @@
   top: 1000px;
   height: 100%;
   width: 100%;
-  background-color: #ecf0f1;
+  background-color: #3C3C3C;
   z-index: 999;
   opacity: 0;
 }
@@ -109,7 +115,7 @@ textarea {
 .fab {
   width: 70px;
   height: 70px;
-  background-color: #3498db;
+  background-color: #65219c;
   border-radius: 50%;
   box-shadow: 0 2px 6px 0 #666;
   transition: all 0.1s ease-in-out;
@@ -145,7 +151,7 @@ textarea {
 .fab-photo {
   width: 50px;
   height: 50px;
-  background-color: #470494;
+  background-color: #1C1C1C;
   border-radius: 50%;
   box-shadow: 0 2px 6px 0 #666;
   transition: all 0.1s ease-in-out;
@@ -206,7 +212,7 @@ textarea {
     width: 100%;
     display: block;
     list-style-type: none;
-    background-color: #dde1e2;
+    background-color: #3C3C3C;
     padding-bottom: 2em;
     padding-left: 0px;
     margin-bottom: 2em; 
@@ -215,7 +221,7 @@ textarea {
       padding: 1em 0; 
     }
     .timeline li:nth-child(even) {
-      background-color: #d3d7d8; 
+      background-color: #3C3C3C; 
     }
   
   .avatar {
@@ -250,8 +256,8 @@ textarea {
     top: 0px;
 
     margin: auto;
-    background-color: #3498db;
-    text-shadow: #2084c7 1px 1px 0;
+    background-color: #1C1C1C;
+    text-shadow: #1C1C1C 1px 1px 0;
     padding: 1em 0 !important;
     color: white;
     text-align: center;
@@ -400,7 +406,7 @@ and (-webkit-device-pixel-ratio : 3) {
     transition-timing-function: ease; }
     .icon-mail-reply:hover {
       cursor: pointer;
-      color: #3498db; }
+      color: #1C1C1C; }
   
   h3 {
     font-size: 1.2em;
