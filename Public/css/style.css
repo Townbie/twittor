@@ -23,8 +23,24 @@
   display: flex; /* usar flexbox */
   justify-content: center; /* Centrar horizontalmente */
   gap: 20px; /* Espacio entre los avatares */ 
+  flex-wrap: wrap;
+}
+ 
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .seleccion {
+    gap: 15px; /* Reduce el espacio entre los avatares */
+    margin-top: 4em; /* Ajusta el margen superior en pantallas pequeñas */
+  }
 }
 
+@media (max-width: 480px) {
+  .seleccion {
+    flex-direction: column; /* Pone los elementos en una columna en pantallas muy pequeñas */
+    gap: 10px; /* Reduce aún más el espacio */
+    margin-top: 2em;
+  }
+}
 .seleccion div {
   margin-top: 2em;
 }
